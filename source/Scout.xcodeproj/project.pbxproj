@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		94437D79283B9C7B008EB177 /* ScoutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94437D78283B9C7B008EB177 /* ScoutApp.swift */; };
-		94437D7B283B9C7B008EB177 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94437D7A283B9C7B008EB177 /* ContentView.swift */; };
+		94437D7B283B9C7B008EB177 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94437D7A283B9C7B008EB177 /* DashboardView.swift */; };
 		94437D7D283B9C7B008EB177 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94437D7C283B9C7B008EB177 /* Assets.xcassets */; };
 		94437D80283B9C7B008EB177 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94437D7F283B9C7B008EB177 /* Preview Assets.xcassets */; };
 		94437D8A283B9C7C008EB177 /* ScoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94437D89283B9C7C008EB177 /* ScoutTests.swift */; };
 		94437D94283B9C7C008EB177 /* ScoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94437D93283B9C7C008EB177 /* ScoutUITests.swift */; };
 		94437D96283B9C7C008EB177 /* ScoutUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94437D95283B9C7C008EB177 /* ScoutUITestsLaunchTests.swift */; };
+		94B5919A283CF76C0046B1D9 /* DayPlannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B59199283CF76C0046B1D9 /* DayPlannerView.swift */; };
+		94B5919D283CF7F40046B1D9 /* DayPlanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B5919C283CF7F40046B1D9 /* DayPlanner.swift */; };
+		94B5919F283CFBEC0046B1D9 /* WeatherIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B5919E283CFBEC0046B1D9 /* WeatherIcon.swift */; };
+		94B591A1283CFC1C0046B1D9 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B591A0283CFC1C0046B1D9 /* Player.swift */; };
+		94B591A3283CFCD60046B1D9 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B591A2283CFCD60046B1D9 /* Team.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,7 @@
 /* Begin PBXFileReference section */
 		94437D75283B9C7B008EB177 /* Scout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94437D78283B9C7B008EB177 /* ScoutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoutApp.swift; sourceTree = "<group>"; };
-		94437D7A283B9C7B008EB177 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		94437D7A283B9C7B008EB177 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		94437D7C283B9C7B008EB177 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94437D7F283B9C7B008EB177 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		94437D85283B9C7C008EB177 /* ScoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +49,11 @@
 		94437D8F283B9C7C008EB177 /* ScoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94437D93283B9C7C008EB177 /* ScoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoutUITests.swift; sourceTree = "<group>"; };
 		94437D95283B9C7C008EB177 /* ScoutUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoutUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		94B59199283CF76C0046B1D9 /* DayPlannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPlannerView.swift; sourceTree = "<group>"; };
+		94B5919C283CF7F40046B1D9 /* DayPlanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPlanner.swift; sourceTree = "<group>"; };
+		94B5919E283CFBEC0046B1D9 /* WeatherIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherIcon.swift; sourceTree = "<group>"; };
+		94B591A0283CFC1C0046B1D9 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		94B591A2283CFCD60046B1D9 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +104,11 @@
 		94437D77283B9C7B008EB177 /* Scout */ = {
 			isa = PBXGroup;
 			children = (
-				94437D78283B9C7B008EB177 /* ScoutApp.swift */,
-				94437D7A283B9C7B008EB177 /* ContentView.swift */,
-				94437D7C283B9C7B008EB177 /* Assets.xcassets */,
-				94437D7E283B9C7B008EB177 /* Preview Content */,
+				94B59195283CE48E0046B1D9 /* App */,
+				94B5919B283CF7A40046B1D9 /* Models */,
+				94B59194283CE4800046B1D9 /* Services */,
+				94B59193283CE40B0046B1D9 /* Views */,
+				94B59196283CE4B30046B1D9 /* Resources */,
 			);
 			path = Scout;
 			sourceTree = "<group>";
@@ -125,6 +136,66 @@
 				94437D95283B9C7C008EB177 /* ScoutUITestsLaunchTests.swift */,
 			);
 			path = ScoutUITests;
+			sourceTree = "<group>";
+		};
+		94B59193283CE40B0046B1D9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				94437D7E283B9C7B008EB177 /* Preview Content */,
+				94B59198283CE4D60046B1D9 /* Controls */,
+				94B59197283CE4CF0046B1D9 /* Screens */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		94B59194283CE4800046B1D9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		94B59195283CE48E0046B1D9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				94437D78283B9C7B008EB177 /* ScoutApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		94B59196283CE4B30046B1D9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				94437D7C283B9C7B008EB177 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		94B59197283CE4CF0046B1D9 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				94437D7A283B9C7B008EB177 /* DashboardView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		94B59198283CE4D60046B1D9 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				94B59199283CF76C0046B1D9 /* DayPlannerView.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		94B5919B283CF7A40046B1D9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				94B5919C283CF7F40046B1D9 /* DayPlanner.swift */,
+				94B5919E283CFBEC0046B1D9 /* WeatherIcon.swift */,
+				94B591A0283CFC1C0046B1D9 /* Player.swift */,
+				94B591A2283CFCD60046B1D9 /* Team.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +328,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94437D7B283B9C7B008EB177 /* ContentView.swift in Sources */,
+				94437D7B283B9C7B008EB177 /* DashboardView.swift in Sources */,
+				94B5919F283CFBEC0046B1D9 /* WeatherIcon.swift in Sources */,
+				94B591A3283CFCD60046B1D9 /* Team.swift in Sources */,
+				94B5919D283CF7F40046B1D9 /* DayPlanner.swift in Sources */,
 				94437D79283B9C7B008EB177 /* ScoutApp.swift in Sources */,
+				94B591A1283CFC1C0046B1D9 /* Player.swift in Sources */,
+				94B5919A283CF76C0046B1D9 /* DayPlannerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,24 +490,26 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Scout/Preview Content\"";
-				DEVELOPMENT_TEAM = 2FH969U36L;
+				DEVELOPMENT_ASSET_PATHS = "\"Scout/Views/Preview Content\"";
+				DEVELOPMENT_TEAM = 228SHB48LR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = greentree.studio.scout;
+				PRODUCT_BUNDLE_IDENTIFIER = greentree.studio.scouting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -443,24 +521,26 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Scout/Preview Content\"";
-				DEVELOPMENT_TEAM = 2FH969U36L;
+				DEVELOPMENT_ASSET_PATHS = "\"Scout/Views/Preview Content\"";
+				DEVELOPMENT_TEAM = 228SHB48LR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = greentree.studio.scout;
+				PRODUCT_BUNDLE_IDENTIFIER = greentree.studio.scouting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -474,7 +554,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2FH969U36L;
+				DEVELOPMENT_TEAM = 228SHB48LR;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MARKETING_VERSION = 1.0;
@@ -494,7 +574,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2FH969U36L;
+				DEVELOPMENT_TEAM = 228SHB48LR;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MARKETING_VERSION = 1.0;
@@ -511,9 +591,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2FH969U36L;
+				DEVELOPMENT_TEAM = 228SHB48LR;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = greentree.studio.ScoutUITests;
@@ -529,9 +610,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2FH969U36L;
+				DEVELOPMENT_TEAM = 228SHB48LR;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = greentree.studio.ScoutUITests;
