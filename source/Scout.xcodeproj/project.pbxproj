@@ -14,6 +14,11 @@
 		94437D8A283B9C7C008EB177 /* ScoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94437D89283B9C7C008EB177 /* ScoutTests.swift */; };
 		94437D94283B9C7C008EB177 /* ScoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94437D93283B9C7C008EB177 /* ScoutUITests.swift */; };
 		94437D96283B9C7C008EB177 /* ScoutUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94437D95283B9C7C008EB177 /* ScoutUITestsLaunchTests.swift */; };
+		947CABC228465B1900BA8491 /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = 947CABC128465B1900BA8491 /* SwiftDate */; };
+		948C03E4284A136200F29174 /* DashboardView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C03E3284A136200F29174 /* DashboardView+ViewModel.swift */; };
+		948C03E8284A14E900F29174 /* DashboardView+ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C03E7284A14E900F29174 /* DashboardView+ViewModelTests.swift */; };
+		948C03EB284A182400F29174 /* ScheduleServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C03EA284A182400F29174 /* ScheduleServiceProtocol.swift */; };
+		948C03EE284A1B0600F29174 /* MockScheduleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C03ED284A1B0600F29174 /* MockScheduleService.swift */; };
 		94B5919A283CF76C0046B1D9 /* DayPlannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B59199283CF76C0046B1D9 /* DayPlannerView.swift */; };
 		94B5919D283CF7F40046B1D9 /* DayPlanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B5919C283CF7F40046B1D9 /* DayPlanner.swift */; };
 		94B5919F283CFBEC0046B1D9 /* WeatherIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B5919E283CFBEC0046B1D9 /* WeatherIcon.swift */; };
@@ -49,6 +54,10 @@
 		94437D8F283B9C7C008EB177 /* ScoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94437D93283B9C7C008EB177 /* ScoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoutUITests.swift; sourceTree = "<group>"; };
 		94437D95283B9C7C008EB177 /* ScoutUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoutUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		948C03E3284A136200F29174 /* DashboardView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardView+ViewModel.swift"; sourceTree = "<group>"; };
+		948C03E7284A14E900F29174 /* DashboardView+ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardView+ViewModelTests.swift"; sourceTree = "<group>"; };
+		948C03EA284A182400F29174 /* ScheduleServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleServiceProtocol.swift; sourceTree = "<group>"; };
+		948C03ED284A1B0600F29174 /* MockScheduleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockScheduleService.swift; sourceTree = "<group>"; };
 		94B59199283CF76C0046B1D9 /* DayPlannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPlannerView.swift; sourceTree = "<group>"; };
 		94B5919C283CF7F40046B1D9 /* DayPlanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPlanner.swift; sourceTree = "<group>"; };
 		94B5919E283CFBEC0046B1D9 /* WeatherIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherIcon.swift; sourceTree = "<group>"; };
@@ -61,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				947CABC228465B1900BA8491 /* SwiftDate in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +134,8 @@
 		94437D88283B9C7C008EB177 /* ScoutTests */ = {
 			isa = PBXGroup;
 			children = (
+				948C03EC284A1AE900F29174 /* Services */,
+				948C03E5284A14A500F29174 /* Views */,
 				94437D89283B9C7C008EB177 /* ScoutTests.swift */,
 			);
 			path = ScoutTests;
@@ -136,6 +148,30 @@
 				94437D95283B9C7C008EB177 /* ScoutUITestsLaunchTests.swift */,
 			);
 			path = ScoutUITests;
+			sourceTree = "<group>";
+		};
+		948C03E5284A14A500F29174 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				948C03E6284A14C900F29174 /* Screens */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		948C03E6284A14C900F29174 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				948C03E7284A14E900F29174 /* DashboardView+ViewModelTests.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		948C03EC284A1AE900F29174 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				948C03ED284A1B0600F29174 /* MockScheduleService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		94B59193283CE40B0046B1D9 /* Views */ = {
@@ -151,6 +187,7 @@
 		94B59194283CE4800046B1D9 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				948C03EA284A182400F29174 /* ScheduleServiceProtocol.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -175,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				94437D7A283B9C7B008EB177 /* DashboardView.swift */,
+				948C03E3284A136200F29174 /* DashboardView+ViewModel.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -214,6 +252,9 @@
 			dependencies = (
 			);
 			name = Scout;
+			packageProductDependencies = (
+				947CABC128465B1900BA8491 /* SwiftDate */,
+			);
 			productName = Scout;
 			productReference = 94437D75283B9C7B008EB177 /* Scout.app */;
 			productType = "com.apple.product-type.application";
@@ -286,6 +327,9 @@
 				Base,
 			);
 			mainGroup = 94437D6C283B9C7B008EB177;
+			packageReferences = (
+				947CABC028465B1900BA8491 /* XCRemoteSwiftPackageReference "SwiftDate" */,
+			);
 			productRefGroup = 94437D76283B9C7B008EB177 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -329,8 +373,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				94437D7B283B9C7B008EB177 /* DashboardView.swift in Sources */,
+				948C03EB284A182400F29174 /* ScheduleServiceProtocol.swift in Sources */,
 				94B5919F283CFBEC0046B1D9 /* WeatherIcon.swift in Sources */,
 				94B591A3283CFCD60046B1D9 /* Team.swift in Sources */,
+				948C03E4284A136200F29174 /* DashboardView+ViewModel.swift in Sources */,
 				94B5919D283CF7F40046B1D9 /* DayPlanner.swift in Sources */,
 				94437D79283B9C7B008EB177 /* ScoutApp.swift in Sources */,
 				94B591A1283CFC1C0046B1D9 /* Player.swift in Sources */,
@@ -342,6 +388,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				948C03E8284A14E900F29174 /* DashboardView+ViewModelTests.swift in Sources */,
+				948C03EE284A1B0600F29174 /* MockScheduleService.swift in Sources */,
 				94437D8A283B9C7C008EB177 /* ScoutTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -665,6 +713,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		947CABC028465B1900BA8491 /* XCRemoteSwiftPackageReference "SwiftDate" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/malcommac/SwiftDate.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		947CABC128465B1900BA8491 /* SwiftDate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 947CABC028465B1900BA8491 /* XCRemoteSwiftPackageReference "SwiftDate" */;
+			productName = SwiftDate;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 94437D6D283B9C7B008EB177 /* Project object */;
 }

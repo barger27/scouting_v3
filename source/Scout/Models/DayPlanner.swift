@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct DayPlanner : Identifiable {
+struct DayPlanner : Identifiable, Equatable, Hashable, Comparable {
     var id: Date {
         get {
             return day
@@ -23,4 +23,16 @@ struct DayPlanner : Identifiable {
     var location:String?
     var weatherIcon:WeatherIcon?
     var temperature:Int?
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(day)
+    }
+    
+    static func == (lhs:DayPlanner, rhs:DayPlanner) -> Bool {
+        return lhs.day == rhs.day
+    }
+    
+    static func < (lhs:DayPlanner, rhs:DayPlanner) -> Bool {
+        return lhs.day < rhs.day
+    }
 }
