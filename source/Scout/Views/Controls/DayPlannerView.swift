@@ -74,8 +74,7 @@ struct DayPlannerView_Previews: PreviewProvider {
         tournament: nil,
         startTime: Calendar.current.date(bySettingHour: 15, minute: 0, second: 0, of: Date())!,
         location: "Bloomington, IN",
-        weatherIcon: WeatherIcon.sunny,
-        temperature: 74
+        weather: Weather(date: Date(), weatherType: .daily, temperature: 74, weatherIcon: WeatherIcon.sunny)
     )
     
     static var previews: some View {
@@ -89,8 +88,7 @@ struct DayPlannerView_Previews: PreviewProvider {
                                tournament: nil,
                                startTime: today.dateBySet(hour: 13, min: 0, secs: 0),
                                location: "Bloomington, IN",
-                               weatherIcon: WeatherIcon.sunny,
-                               temperature: 80)
+                               weather: Weather(date: today, weatherType: .daily, temperature: 80, weatherIcon: WeatherIcon.sunny))
         
         return VStack(alignment: .leading) {
                       HStack(alignment: .top) {

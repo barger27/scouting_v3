@@ -17,7 +17,7 @@ class MockScheduleService : ScheduleServiceProtocol {
         _getWeeklyScheduleReturn = returnValue
     }
     
-    func getWeeklySchedule(startDate:Date, numberOfDays:Int) -> [DayPlanner] {
+    func getScheduleForDays(startDate:Date, numberOfDays:Int) -> [DayPlanner] {
         if _getWeeklyScheduleReturn.count > 0 {
             return _getWeeklyScheduleReturn
         }

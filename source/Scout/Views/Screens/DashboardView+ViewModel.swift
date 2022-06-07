@@ -23,7 +23,7 @@ extension DashboardView {
         @Published var weeklyPlan:[DayPlanner] = []
         
         func initializeView() {
-            weeklyPlan = _scheduleService.getWeeklySchedule(startDate: Date(), numberOfDays: 7)
+            weeklyPlan = _scheduleService.getScheduleForDays(startDate: Date(), numberOfDays: 7)
         }
     }
 }
