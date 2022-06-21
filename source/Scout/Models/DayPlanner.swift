@@ -16,12 +16,11 @@ struct DayPlanner : Identifiable, Equatable, Hashable, Comparable {
     }
     
     var day:Date
-    var primaryTeam:Team?
-    var awayTeam:Team?
+    var teams:[Team]
+    var players:[Player]
     var tournament:String?
     var startTime:Date?
     var location:String?
-    var weather:Weather?
     
     func hash(into hasher: inout Hasher) {
         hasher.combine(day)

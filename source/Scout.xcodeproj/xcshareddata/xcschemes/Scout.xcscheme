@@ -27,7 +27,31 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
-      codeCoverageEnabled = "YES">
+      codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "YES">
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "94437D74283B9C7B008EB177"
+            BuildableName = "Scout.app"
+            BlueprintName = "Scout"
+            ReferencedContainer = "container:Scout.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "94437D84283B9C7C008EB177"
+            BuildableName = "ScoutTests.xctest"
+            BlueprintName = "ScoutTests"
+            ReferencedContainer = "container:Scout.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "94437D8E283B9C7C008EB177"
+            BuildableName = "ScoutUITests.xctest"
+            BlueprintName = "ScoutUITests"
+            ReferencedContainer = "container:Scout.xcodeproj">
+         </BuildableReference>
+      </CodeCoverageTargets>
       <Testables>
          <TestableReference
             skipped = "NO">

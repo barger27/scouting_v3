@@ -13,42 +13,44 @@ import SwiftDate
 class DashboardViewViewModelTests : XCTestCase {
     var viewModel:DashboardView.ViewModel!
     
-    
     override func setUpWithError() throws {
         let mockScheduleService = MockScheduleService()
-        
-        viewModel = DashboardView.ViewModel(scheduleService: mockScheduleService)
-        viewModel.initializeView()
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here.
-        // This method is called after the invocation of each test method in the class.
+        self.viewModel = DashboardView.ViewModel(scheduleService: mockScheduleService)
+            
+        self.continueAfterFailure = false
     }
     
     
-    func testWeeklyPlan_contains7Days() {
+    func testWeeklyPlan_contains7Days() async {
+        await viewModel.initializeView()
         let days = viewModel.weeklyPlan
         
         XCTAssertEqual(7, days.count)
     }
     
     
-    func testWeeklyPlan_startsWithToday() {
+    func testWeeklyPlan_startsWithToday() async {
+        await viewModel.initializeView()
         let days = viewModel.weeklyPlan
         
+        XCTAssertTrue(days.count > 0)
         XCTAssertEqual(days[0].day.month, Date().month)
         XCTAssertEqual(days[0].day.day, Date().day)
         XCTAssertEqual(days[0].day.year, Date().year)
     }
     
     
-    func testWeeklyPlan_returnsDaysInOrder() {
+    func testWeeklyPlan_returnsDaysInOrder() async {
+        await viewModel.initializeView()
         let days = viewModel.weeklyPlan
         let sortedDays = viewModel.weeklyPlan.sorted()
         
-        for dayIndex in 0 ..< 7 {
-            XCTAssertEqual(days[dayIndex], sortedDays[dayIndex])
+        XCTAssertTrue(days.count > 0)
+        
+        if (days.count > 0) {
+            for dayIndex in 0 ..< 7 {
+                XCTAssertEqual(days[dayIndex], sortedDays[dayIndex])
+            }
         }
     }
 }

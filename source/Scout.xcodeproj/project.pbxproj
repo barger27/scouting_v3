@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9402692D2861E40F00B963DB /* XCAsyncTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9402692C2861E40F00B963DB /* XCAsyncTestCase.swift */; };
+		9411FCE3284F6F5B003B248B /* PlayerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9411FCE2284F6F5B003B248B /* PlayerTest.swift */; };
 		94437D79283B9C7B008EB177 /* ScoutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94437D78283B9C7B008EB177 /* ScoutApp.swift */; };
 		94437D7B283B9C7B008EB177 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94437D7A283B9C7B008EB177 /* DashboardView.swift */; };
 		94437D7D283B9C7B008EB177 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94437D7C283B9C7B008EB177 /* Assets.xcassets */; };
 		94437D80283B9C7B008EB177 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94437D7F283B9C7B008EB177 /* Preview Assets.xcassets */; };
 		94437D94283B9C7C008EB177 /* ScoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94437D93283B9C7C008EB177 /* ScoutUITests.swift */; };
 		94437D96283B9C7C008EB177 /* ScoutUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94437D95283B9C7C008EB177 /* ScoutUITestsLaunchTests.swift */; };
+		945FA4CF285B4F440016821F /* ScheduleDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945FA4CE285B4F440016821F /* ScheduleDataSourceProtocol.swift */; };
+		945FA4D2285B52160016821F /* CoreDataScheduleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945FA4D1285B52160016821F /* CoreDataScheduleDataSource.swift */; };
 		9467C4E5284F5D1A00B2B7AE /* MockScheduleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9467C4E4284F5D1A00B2B7AE /* MockScheduleRepository.swift */; };
 		947CABC228465B1900BA8491 /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = 947CABC128465B1900BA8491 /* SwiftDate */; };
 		948C03E4284A136200F29174 /* DashboardView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C03E3284A136200F29174 /* DashboardView+ViewModel.swift */; };
@@ -24,12 +28,16 @@
 		94B5919D283CF7F40046B1D9 /* DayPlanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B5919C283CF7F40046B1D9 /* DayPlanner.swift */; };
 		94B591A1283CFC1C0046B1D9 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B591A0283CFC1C0046B1D9 /* Player.swift */; };
 		94B591A3283CFCD60046B1D9 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B591A2283CFCD60046B1D9 /* Team.swift */; };
+		94B6F1502850AE8E005D64D9 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6F14F2850AE8E005D64D9 /* Location.swift */; };
+		94B6F1522850B499005D64D9 /* LocationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6F1512850B499005D64D9 /* LocationTest.swift */; };
+		94CE8578285C9BC000961CED /* TeamTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CE8577285C9BC000961CED /* TeamTest.swift */; };
 		94EA0327284E0748004AE304 /* PersistedScheduleServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA0326284E0748004AE304 /* PersistedScheduleServiceTest.swift */; };
 		94EA0329284E10DC004AE304 /* ScheduleRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA0328284E10DC004AE304 /* ScheduleRepositoryProtocol.swift */; };
 		94EA032B284E141E004AE304 /* WeatherServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA032A284E141E004AE304 /* WeatherServiceProtocol.swift */; };
 		94EA032D284E1659004AE304 /* MockWeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA032C284E1659004AE304 /* MockWeatherService.swift */; };
 		94EA032F284E1911004AE304 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA032E284E1911004AE304 /* Weather.swift */; };
-		94EA0332284E1A97004AE304 /* WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA0331284E1A97004AE304 /* WeatherTests.swift */; };
+		94EA0332284E1A97004AE304 /* WeatherTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA0331284E1A97004AE304 /* WeatherTest.swift */; };
+		94F6DDB92859EF5B005B18C8 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 94F6DDB72859EF5B005B18C8 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9402692C2861E40F00B963DB /* XCAsyncTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCAsyncTestCase.swift; sourceTree = "<group>"; };
+		9411FCE2284F6F5B003B248B /* PlayerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTest.swift; sourceTree = "<group>"; };
 		94437D75283B9C7B008EB177 /* Scout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94437D78283B9C7B008EB177 /* ScoutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoutApp.swift; sourceTree = "<group>"; };
 		94437D7A283B9C7B008EB177 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
@@ -59,6 +69,8 @@
 		94437D8F283B9C7C008EB177 /* ScoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94437D93283B9C7C008EB177 /* ScoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoutUITests.swift; sourceTree = "<group>"; };
 		94437D95283B9C7C008EB177 /* ScoutUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoutUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		945FA4CE285B4F440016821F /* ScheduleDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDataSourceProtocol.swift; sourceTree = "<group>"; };
+		945FA4D1285B52160016821F /* CoreDataScheduleDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataScheduleDataSource.swift; sourceTree = "<group>"; };
 		9467C4E4284F5D1A00B2B7AE /* MockScheduleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockScheduleRepository.swift; sourceTree = "<group>"; };
 		948C03E3284A136200F29174 /* DashboardView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardView+ViewModel.swift"; sourceTree = "<group>"; };
 		948C03E7284A14E900F29174 /* DashboardView+ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardView+ViewModelTests.swift"; sourceTree = "<group>"; };
@@ -69,12 +81,16 @@
 		94B5919C283CF7F40046B1D9 /* DayPlanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPlanner.swift; sourceTree = "<group>"; };
 		94B591A0283CFC1C0046B1D9 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		94B591A2283CFCD60046B1D9 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		94B6F14F2850AE8E005D64D9 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		94B6F1512850B499005D64D9 /* LocationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTest.swift; sourceTree = "<group>"; };
+		94CE8577285C9BC000961CED /* TeamTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTest.swift; sourceTree = "<group>"; };
 		94EA0326284E0748004AE304 /* PersistedScheduleServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistedScheduleServiceTest.swift; sourceTree = "<group>"; };
 		94EA0328284E10DC004AE304 /* ScheduleRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleRepositoryProtocol.swift; sourceTree = "<group>"; };
 		94EA032A284E141E004AE304 /* WeatherServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceProtocol.swift; sourceTree = "<group>"; };
 		94EA032C284E1659004AE304 /* MockWeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWeatherService.swift; sourceTree = "<group>"; };
 		94EA032E284E1911004AE304 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
-		94EA0331284E1A97004AE304 /* WeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTests.swift; sourceTree = "<group>"; };
+		94EA0331284E1A97004AE304 /* WeatherTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTest.swift; sourceTree = "<group>"; };
+		94F6DDB82859EF5B005B18C8 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +176,7 @@
 				94EA0330284E1A6A004AE304 /* Models */,
 				948C03EC284A1AE900F29174 /* Services */,
 				948C03E5284A14A500F29174 /* Views */,
+				9402692C2861E40F00B963DB /* XCAsyncTestCase.swift */,
 			);
 			path = ScoutTests;
 			sourceTree = "<group>";
@@ -171,6 +188,15 @@
 				94437D95283B9C7C008EB177 /* ScoutUITestsLaunchTests.swift */,
 			);
 			path = ScoutUITests;
+			sourceTree = "<group>";
+		};
+		945FA4D0285B50580016821F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				94F6DDB72859EF5B005B18C8 /* Model.xcdatamodeld */,
+				945FA4D1285B52160016821F /* CoreDataScheduleDataSource.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		9467C4E3284F5D0700B2B7AE /* Data */ = {
@@ -209,7 +235,9 @@
 		948C03EF284A243200F29174 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				945FA4D0285B50580016821F /* CoreData */,
 				94EA0328284E10DC004AE304 /* ScheduleRepositoryProtocol.swift */,
+				945FA4CE285B4F440016821F /* ScheduleDataSourceProtocol.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -282,6 +310,7 @@
 				94B591A0283CFC1C0046B1D9 /* Player.swift */,
 				94B591A2283CFCD60046B1D9 /* Team.swift */,
 				94EA032E284E1911004AE304 /* Weather.swift */,
+				94B6F14F2850AE8E005D64D9 /* Location.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -297,7 +326,10 @@
 		94EA0330284E1A6A004AE304 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				94EA0331284E1A97004AE304 /* WeatherTests.swift */,
+				94EA0331284E1A97004AE304 /* WeatherTest.swift */,
+				9411FCE2284F6F5B003B248B /* PlayerTest.swift */,
+				94B6F1512850B499005D64D9 /* LocationTest.swift */,
+				94CE8577285C9BC000961CED /* TeamTest.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -441,15 +473,19 @@
 				94437D7B283B9C7B008EB177 /* DashboardView.swift in Sources */,
 				948C03F2284A251900F29174 /* PersistedScheduleService.swift in Sources */,
 				948C03EB284A182400F29174 /* ScheduleServiceProtocol.swift in Sources */,
+				94F6DDB92859EF5B005B18C8 /* Model.xcdatamodeld in Sources */,
 				94B591A3283CFCD60046B1D9 /* Team.swift in Sources */,
 				948C03E4284A136200F29174 /* DashboardView+ViewModel.swift in Sources */,
 				94EA032B284E141E004AE304 /* WeatherServiceProtocol.swift in Sources */,
+				94B6F1502850AE8E005D64D9 /* Location.swift in Sources */,
 				94B5919D283CF7F40046B1D9 /* DayPlanner.swift in Sources */,
 				94EA032F284E1911004AE304 /* Weather.swift in Sources */,
 				94437D79283B9C7B008EB177 /* ScoutApp.swift in Sources */,
 				94EA0329284E10DC004AE304 /* ScheduleRepositoryProtocol.swift in Sources */,
+				945FA4D2285B52160016821F /* CoreDataScheduleDataSource.swift in Sources */,
 				94B591A1283CFC1C0046B1D9 /* Player.swift in Sources */,
 				94B5919A283CF76C0046B1D9 /* DayPlannerView.swift in Sources */,
+				945FA4CF285B4F440016821F /* ScheduleDataSourceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,10 +495,14 @@
 			files = (
 				948C03E8284A14E900F29174 /* DashboardView+ViewModelTests.swift in Sources */,
 				948C03EE284A1B0600F29174 /* MockScheduleService.swift in Sources */,
+				9411FCE3284F6F5B003B248B /* PlayerTest.swift in Sources */,
 				9467C4E5284F5D1A00B2B7AE /* MockScheduleRepository.swift in Sources */,
 				94EA032D284E1659004AE304 /* MockWeatherService.swift in Sources */,
 				94EA0327284E0748004AE304 /* PersistedScheduleServiceTest.swift in Sources */,
-				94EA0332284E1A97004AE304 /* WeatherTests.swift in Sources */,
+				94B6F1522850B499005D64D9 /* LocationTest.swift in Sources */,
+				94EA0332284E1A97004AE304 /* WeatherTest.swift in Sources */,
+				94CE8578285C9BC000961CED /* TeamTest.swift in Sources */,
+				9402692D2861E40F00B963DB /* XCAsyncTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -804,6 +844,19 @@
 			productName = SwiftDate;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		94F6DDB72859EF5B005B18C8 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				94F6DDB82859EF5B005B18C8 /* Model.xcdatamodel */,
+			);
+			currentVersion = 94F6DDB82859EF5B005B18C8 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 94437D6D283B9C7B008EB177 /* Project object */;
 }

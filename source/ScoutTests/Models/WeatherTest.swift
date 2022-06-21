@@ -8,7 +8,7 @@
 import XCTest
 @testable import Scout
 
-class WeatherTests: XCTestCase {
+class WeatherTest: XCTestCase {
 
     func test_weatherDefaultsToDaily() {
         let weather = Weather(date: Date())

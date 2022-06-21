@@ -26,7 +26,12 @@ class MockScheduleService : ScheduleServiceProtocol {
         
         for dayIndex in 0..<numberOfDays {
             if let date = Calendar.current.date(byAdding: .day, value: dayIndex, to: startDate) {
-                let planner = DayPlanner(day: date)
+                let planner = DayPlanner(day: date,
+                                         teams: [],
+                                         players: [],
+                                         tournament: nil,
+                                         startTime:  nil,
+                                         location: "")
                 dayPlanners.append(planner)
             }
         }

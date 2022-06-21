@@ -8,5 +8,5 @@
 import Foundation
 
 protocol ScheduleServiceProtocol {
-    func getScheduleForDays(startDate:Date, numberOfDays:Int) -> [DayPlanner]
+    func getScheduleForDays(startDate:Date, numberOfDays:Int) async throws -> [DayPlanner]
 }

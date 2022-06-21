@@ -21,8 +21,8 @@ struct DayPlannerView: View {
             Color.white
             VStack(alignment: .center) {
                 Spacer()
-                Text(model.primaryTeam?.name ?? "")
-                Text(model.awayTeam?.name ?? "")
+                Text(model.players[0].firstName)
+                Text(model.players[1].firstName)
                 Text(model.startTime?.toFormat("h a") ?? "")
                     .font(.caption)
                 Spacer()
@@ -69,12 +69,11 @@ struct DayPlannerView: View {
 struct DayPlannerView_Previews: PreviewProvider {
     static let model = DayPlanner(
         day: Date(),
-        primaryTeam: Team(name: "Indiana"),
-        awayTeam: Team(name: "Purdue"),
+        teams: [ Team(name: "Indiana University"), Team(name: "Purdue Universitiy") ],
+        players: [],
         tournament: nil,
         startTime: Calendar.current.date(bySettingHour: 15, minute: 0, second: 0, of: Date())!,
-        location: "Bloomington, IN",
-        weather: Weather(date: Date(), weatherType: .daily, temperature: 74, weatherIcon: WeatherIcon.sunny)
+        location: "Bloomington, IN"
     )
     
     static var previews: some View {
@@ -83,12 +82,11 @@ struct DayPlannerView_Previews: PreviewProvider {
         let today = Date()
         
         let model = DayPlanner(day: today,
-                               primaryTeam: homeTeam,
-                               awayTeam: awayTeam,
+                               teams: [ homeTeam, awayTeam ],
+                               players: [],
                                tournament: nil,
                                startTime: today.dateBySet(hour: 13, min: 0, secs: 0),
-                               location: "Bloomington, IN",
-                               weather: Weather(date: today, weatherType: .daily, temperature: 80, weatherIcon: WeatherIcon.sunny))
+                               location: "Bloomington, IN")
         
         return VStack(alignment: .leading) {
                       HStack(alignment: .top) {

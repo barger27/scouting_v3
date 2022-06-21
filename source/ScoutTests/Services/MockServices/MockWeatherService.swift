@@ -36,4 +36,9 @@ class MockWeatherService : WeatherServiceProtocol {
         
         return weatherData
     }
+    
+    
+    func getDailyWeather(for location: Location, on date: Date) async throws -> Weather {
+        return Weather(date: Date())
+    }
 }

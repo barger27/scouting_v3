@@ -8,5 +8,5 @@
 import Foundation
 
 protocol ScheduleRepositoryProtocol {
-    
+    func getSchedule(startDate:Date, endDate:Date) async throws -> [ DayPlanner ]
 }

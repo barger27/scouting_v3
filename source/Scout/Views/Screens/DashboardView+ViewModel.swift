@@ -22,8 +22,14 @@ extension DashboardView {
         // Bindable Properties
         @Published var weeklyPlan:[DayPlanner] = []
         
-        func initializeView() {
-            weeklyPlan = _scheduleService.getScheduleForDays(startDate: Date(), numberOfDays: 7)
+        
+        func initializeView() async {
+            do {
+                weeklyPlan = try await _scheduleService.getScheduleForDays(startDate: Date(), numberOfDays: 7)
+            }
+            catch {
+                print("Error occurred fetching the schedule")
+            }
         }
     }
 }
