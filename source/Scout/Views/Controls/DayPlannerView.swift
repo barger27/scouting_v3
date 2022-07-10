@@ -21,8 +21,12 @@ struct DayPlannerView: View {
             Color.white
             VStack(alignment: .center) {
                 Spacer()
-                Text(model.players[0].firstName)
-                Text(model.players[1].firstName)
+                ForEach(Array<Player>(model.players ?? [])) {
+                    player in
+ 
+                    Text(player.firstName ?? "")
+                }
+                
                 Text(model.startTime?.toFormat("h a") ?? "")
                     .font(.caption)
                 Spacer()
@@ -36,9 +40,9 @@ struct DayPlannerView: View {
             VStack(alignment: .leading) {
                 HStack(alignment: .top) {
                     VStack(alignment: .center) {
-                        Text(model.day.toFormat("d"))
+                        Text(model.day?.toFormat("d") ?? "")
                             .font(.largeTitle)
-                        Text(model.day.toFormat("EEE"))
+                        Text(model.day?.toFormat("EEE") ?? "")
                             .font(.title3)
                     }.padding(6)
 
@@ -67,26 +71,14 @@ struct DayPlannerView: View {
 
 
 struct DayPlannerView_Previews: PreviewProvider {
-    static let model = DayPlanner(
-        day: Date(),
-        teams: [ Team(name: "Indiana University"), Team(name: "Purdue Universitiy") ],
-        players: [],
-        tournament: nil,
-        startTime: Calendar.current.date(bySettingHour: 15, minute: 0, second: 0, of: Date())!,
-        location: "Bloomington, IN"
-    )
-    
+    let model = DayPlanner()
+
     static var previews: some View {
-        let awayTeam = Team(name: "Xavier")
-        let homeTeam = Team(name: "Indiana")
+        let awayTeam = Team()
+        let homeTeam = Team()
         let today = Date()
         
-        let model = DayPlanner(day: today,
-                               teams: [ homeTeam, awayTeam ],
-                               players: [],
-                               tournament: nil,
-                               startTime: today.dateBySet(hour: 13, min: 0, secs: 0),
-                               location: "Bloomington, IN")
+        let model = DayPlanner()
         
         return VStack(alignment: .leading) {
                       HStack(alignment: .top) {

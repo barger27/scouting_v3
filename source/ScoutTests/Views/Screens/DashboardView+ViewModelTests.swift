@@ -34,9 +34,9 @@ class DashboardViewViewModelTests : XCTestCase {
         let days = viewModel.weeklyPlan
         
         XCTAssertTrue(days.count > 0)
-        XCTAssertEqual(days[0].day.month, Date().month)
-        XCTAssertEqual(days[0].day.day, Date().day)
-        XCTAssertEqual(days[0].day.year, Date().year)
+        XCTAssertEqual(days[0].day?.month, Date().month)
+        XCTAssertEqual(days[0].day?.day, Date().day)
+        XCTAssertEqual(days[0].day?.year, Date().year)
     }
     
     

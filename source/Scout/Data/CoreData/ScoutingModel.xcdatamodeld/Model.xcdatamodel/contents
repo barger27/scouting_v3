@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Address" representedClassName="Address" syncable="YES">
+        <attribute name="address1" optional="YES" attributeType="String"/>
+        <attribute name="address2" optional="YES" attributeType="String"/>
+        <attribute name="addressID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="addressType" attributeType="String"/>
+        <attribute name="city" optional="YES" attributeType="String"/>
+        <attribute name="country" optional="YES" attributeType="String"/>
+        <attribute name="postalCode" optional="YES" attributeType="String"/>
+        <attribute name="state" optional="YES" attributeType="String"/>
+        <relationship name="player" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Player" inverseName="addresses" inverseEntity="Player"/>
+        <relationship name="team" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Team" inverseName="addresses" inverseEntity="Team"/>
+    </entity>
+    <entity name="DayPlanner" representedClassName="DayPlanner" syncable="YES">
+        <attribute name="day" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="startTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="tournament" optional="YES" attributeType="String"/>
+        <relationship name="players" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Player" inverseName="dayPlans" inverseEntity="Player"/>
+    </entity>
+    <entity name="Player" representedClassName="Player" syncable="YES">
+        <attribute name="batSide" optional="YES" attributeType="String" maxValueString="1"/>
+        <attribute name="birthCity" optional="YES" attributeType="String"/>
+        <attribute name="birthCountry" optional="YES" attributeType="String"/>
+        <attribute name="birthdate" optional="YES" attributeType="String"/>
+        <attribute name="birthState" optional="YES" attributeType="String" maxValueString="3"/>
+        <attribute name="collegeGradYear" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdDate" attributeType="Date" defaultDateTimeInterval="679075500" usesScalarValueType="NO"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="firstName" optional="YES" attributeType="String" maxValueString="20"/>
+        <attribute name="gradeLevel" optional="YES" attributeType="String"/>
+        <attribute name="heightInches" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="highSchoolGradYear" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" maxValueString="20"/>
+        <attribute name="middleName" optional="YES" attributeType="String" maxValueString="20"/>
+        <attribute name="mobilePhone" optional="YES" attributeType="String"/>
+        <attribute name="modifiedDate" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="playerID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="positions" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="proEligibleYear" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rosterName" optional="YES" attributeType="String" maxValueString="20"/>
+        <attribute name="territory" optional="YES" attributeType="String"/>
+        <attribute name="throwSide" optional="YES" attributeType="String" maxValueString="1"/>
+        <attribute name="twitter" optional="YES" attributeType="String"/>
+        <attribute name="uniformNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="weightPounds" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="addresses" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Address" inverseName="player" inverseEntity="Address"/>
+        <relationship name="college" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Team" inverseName="collegeAlumni" inverseEntity="Team"/>
+        <relationship name="currentTeam" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Team" inverseName="roster" inverseEntity="Team"/>
+        <relationship name="dayPlans" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DayPlanner" inverseName="players" inverseEntity="DayPlanner"/>
+        <relationship name="highSchool" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Team" inverseName="highSchoolAlumni" inverseEntity="Team"/>
+    </entity>
+    <entity name="Team" representedClassName="Team" syncable="YES">
+        <attribute name="abbreviation" optional="YES" attributeType="String"/>
+        <attribute name="ballparkName" optional="YES" attributeType="String"/>
+        <attribute name="level" optional="YES" attributeType="String"/>
+        <attribute name="logo" optional="YES" attributeType="URI"/>
+        <attribute name="longName" attributeType="String"/>
+        <attribute name="nickname" optional="YES" attributeType="String"/>
+        <attribute name="shortName" optional="YES" attributeType="String"/>
+        <attribute name="teamID" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="addresses" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Address" inverseName="team" inverseEntity="Address"/>
+        <relationship name="affiliates" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Team" inverseName="parentTeam" inverseEntity="Team"/>
+        <relationship name="collegeAlumni" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Player" inverseName="college" inverseEntity="Player"/>
+        <relationship name="highSchoolAlumni" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="Player" inverseName="highSchool" inverseEntity="Player"/>
+        <relationship name="parentTeam" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Team" inverseName="affiliates" inverseEntity="Team"/>
+        <relationship name="roster" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="Player" inverseName="currentTeam" inverseEntity="Player"/>
+    </entity>
+    <elements>
+        <element name="DayPlanner" positionX="-63" positionY="-18" width="129.76953125" height="104"/>
+        <element name="Player" positionX="-144" positionY="36" width="128" height="479"/>
+        <element name="Team" positionX="-254.0234375" positionY="-11.1953125" width="128" height="239"/>
+        <element name="Address" positionX="-153" positionY="144" width="128" height="179"/>
+    </elements>
+</model>
